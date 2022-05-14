@@ -4,7 +4,7 @@ Simple file uploader component for React without style.
 
 ### Installation
 
-```bash
+```
 // with npm
 $ npm install @react-styless/file-uploader  --save
 ```
@@ -19,6 +19,19 @@ const App = () => {
   const handleSuccess = (e) => {
     console.log(e);
   }
-  return <Uploader onSuccess={handleSuccess}><button>Upload</button></Uploader>;
+  return (
+    <Uploader onSuccess={handleSuccess}>
+      <button>Upload</button>
+    </Uploader>
+  );
 }
 ```
+
+
+| Attribute | Type | Description |
+|--|--|--|
+| id | string |  |
+| multiple | boolean | |
+| children | ReactElement | |
+| onSuccess | (f:FileList) => void | |
+| accept | string | |

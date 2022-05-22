@@ -6,7 +6,7 @@ Simple file uploader component for React without style.
 
 ```
 // with npm
-$ npm install @react-styless/file-uploader  --save
+$ npm install @react-styless/file-uploader --save
 ```
 
 ### Usage
@@ -21,7 +21,7 @@ const App = () => {
   }
   return (
     <Uploader onSuccess={handleSuccess}>
-      <button>Upload</button>
+      <button>Upload</button> (/* You can input any component */)
     </Uploader>
   );
 }
@@ -30,7 +30,7 @@ const App = () => {
 
 | Attribute | Type | Description |
 |--|--|--|
-| id | string |  |
+| id | string | |
 | multiple | boolean | |
 | children | ReactElement | |
 | onSuccess | (f:FileList) => void | |

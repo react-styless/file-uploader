@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/react-styless/file-uploader.git"
   },
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

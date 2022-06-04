@@ -18,6 +18,5 @@ jobs:
   Explore-GitHub-Actions2:
     runs-on: ubuntu-latest
     steps:
-      - run: npm version minor -m "v%s"
       - run: VERSION=$(node -p "require('./package.json').version")
       - run: echo "Version {{VERSION}}"

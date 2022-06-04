@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/react-styless/file-uploader.git"
   },
-  "version": "0.1.15",
+  "version": "1.0.1",
   "private": false,
   "dependencies": {
     "@types/react": "^18.0.9",

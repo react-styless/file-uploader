@@ -17,6 +17,13 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
   Explore-GitHub-Actions2:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16.x"
+          registry-url: "https://npm.pkg.github.com"
       - run: npm version patch
       - run: echo "Version"
